@@ -1,0 +1,11 @@
+{
+  "name": "instanews",
+  "version": "1.0.0",
+  "description": "a website that grabs news stories from the NYT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Montana Sawyer",
+  "license": "ISC"
+}
