@@ -3,24 +3,41 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="build/css/style.min.css">
         <link rel="stylesheet" href="fonts/font-awesome/font-awesome.min.css">
         <link rel="stylesheet" href="flickity.css" media="screen">
-        <title>times</title>
+        <title>Instanews - NYT News Reader </title>
     </head>
 
     <body>
-        <h1> times </h1>
+        <h1> New York Times Instanews </h1>
         <header>   
         </header>
-
-        <section>
-        </section>
-
-        <footer>
+            <div>
+            <section>
+                <div class="banner-image"><img src="images/nyt-logo.svg" alt="NYT logo"></div>
+                <div class="banner-text">
+                <p class="tagline">choose a section</p>
+                <div class="dropdown">
+                    <button id="sections-menu"class="sections-button">Sections...</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Home</a>
+                        <a href="#">Science</a>
+                        <a href="#">Business</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Technology</a>
+                        <a href="#">Fashion</a>
+                    </div>
+                </div>
+                <ul >
+                </ul>
+                </div>
+                 </div>
+         </section>
+         <footer>
+             <p class="credit"> &copy; Copyright 2016 INSTANEWS</p>
         </footer>
-        <script src="vendor/jquery-3.1.1,min.js"></script>
+        <script src="vendor/jquery-3.1.1.min.js"></script>
         <script src="build/js/script.min.js"></script>
     </body>
 </html>

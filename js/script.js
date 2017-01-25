@@ -1,7 +1,10 @@
 $(function(){
+   var $menu = $('#sections-menu'),
+   $sectionMenu = $('.sections-button');
 
-    //a message
-    var message = 'I dont want to';
-    console.log(message);
-
+   $sectionMenu.click(function() {
+      $sectionMenu.toggleClass('active');
+      $menu.toggleClass('active');
+      return false;
+   });
 });
