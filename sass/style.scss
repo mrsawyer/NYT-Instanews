@@ -1,17 +1,8 @@
-// @import 'variables';
-// @import 'mixins';
+@import 'variables';
+@import 'mixins';
 
 @import 'reset';
 @import 'fonts';
-
-
-
-body {
-    background-color: black;
-    color: white;
-}
-
-h1 {
-    display: none;
-}
-
+@import 'header';
+@import 'body';
+@import 'footer';
