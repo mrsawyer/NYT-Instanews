@@ -1,22 +1,117 @@
+html, body {
+   @include pageSetup;
+}
+
 body {
     background-color: $backgroundColor;
     color: $baseColor;
     font-size: $baseFont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+/*---------Header---------*/
 
-    a {
-        &:hover {
-            background-color: grey; 
+h1 {
+    display: none;
+}
+
+/*---------Body---------*/
+.mainSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+   
+    @include tablet {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        transition: padding $generalTrans;
+        padding: $mainSearchPad;
+
+        @include tablet {
+            padding-bottom: 0;
+            padding-left: 2rem;
+            flex: 0 1 47%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @include desktop {
+            flex: 0;
+        }
+    }
+
+    img {
+       @include tablet {
+            align-self: flex-end;
+            width: 21vw;
+        } 
+        @include desktop {
+            width: auto;
         }
     }
 }
 
-.show {display:block;}
+.choose {
+    @include fontNormal;
+    padding: $mainSearchPad;
+    font-size: $baseFont - 4;
+    text-align: center; 
+    transition: text-align $generalTrans;
+    @include tablet {
+        text-align: left;
+        font-size: $baseFont - 2;
+    }
+    @include desktop {
+        text-align: left;
+        font-size: $baseFont;
+    }
+}
+
+.sections {
+    transition: all $generalTrans;
+    @include tablet {
+        flex: 0 0 53%;
+    }
+    @include desktop {
+        margin-left: 6vw;
+    }
+}
+
+.select { 
+    padding: $mainSearchPad;
+}
+
+select {
+    font-size: 1.1rem;
+}
+
+/*---------Footer---------*/
+
+footer { 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    // transition: all $generalTrans;
+     @include desktop {
+        justify-content: flex-start;
+        padding-left: 75px;
+    }
+
+    .credit {
+        @include fontNormal;
+        font-size: 14px;
+    }
+}
+

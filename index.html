@@ -11,24 +11,27 @@
         <header>  
         <h1> New York Times Instanews </h1> 
         </header>
-        <section>
-            <div class="banner-image"><img src="images/nyt-logo.svg" alt="NYT logo"></div>
-                <p class="tagline">choose a section</p>
-                <button id="sections-menu"class="sections">Sections...</button>
-                <div id="Dropdown" class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#science">Science</a>
-                    <a href="#business">Business</a>
-                    <a href="#sports">Sports</a>
-                    <a href="#technology">Technology</a>
-                    <a href="#fashion">Fashion</a>
+        <section class="mainSearch">
+            <span class="logo"><img src="images/nyt-logo.svg" alt="NYT logo"></span>
+            <div class="sections">
+                <p class="choose">Choose a section:</p>
+                <div class="select">
+                    <select>
+                        <option> Sections ...</option>
+                        <option>Home</option>
+                        <option>Science</option>
+                        <option>Business</option>
+                        <option>Sports</option>
+                        <option>Technology</option>
+                        <option>Fashion</option>
+                    </select>
                 </div>
             </div>
             <ul>
             </ul>
         </section>
         <footer>
-             <p class="credit"> &copy; Copyright 2016 INSTANEWS</p>
+             <p class="credit"> &copy; Copyright 2017 INSTANEWS</p>
         </footer>
         <script src="vendor/jquery-3.1.1.min.js"></script>
         <script src="build/js/script.min.js"></script>
