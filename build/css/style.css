@@ -82,29 +82,22 @@ html, body {
 body {
   background-color: #000000;
   color: #ffffff;
-  font-size: 16px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  font-size: 16px; }
 
 /*---------Header---------*/
 h1 {
   display: none; }
 
-/*---------Body---------*/
 .mainSearch {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 4rem;
+  height: 100%;
   width: 100%; }
   @media (min-width: 600px) {
     .mainSearch {
@@ -142,6 +135,28 @@ h1 {
     .mainSearch img {
       width: auto; } }
 
+.resultsHeader {
+  height: 200px; }
+  @media (min-width: 600px) {
+    .resultsHeader {
+      height: 125px; } }
+  .resultsHeader .logo img {
+    height: 9rem; }
+    @media (min-width: 600px) {
+      .resultsHeader .logo img {
+        height: 4rem; } }
+
+section {
+  width: 100%; }
+
+.resultsSection {
+  background-color: grey;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  overflow: hidden; }
+
 .choose {
   font-family: 'open-sans';
   font-weight: normal;
@@ -177,6 +192,7 @@ select {
 
 /*---------Footer---------*/
 footer {
+  height: 100px;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
