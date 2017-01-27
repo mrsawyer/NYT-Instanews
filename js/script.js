@@ -23,9 +23,9 @@ $(function(){
                 })
             console.log(articlesWithPics);
 
-            $.each(result.results, function( key, value ){
+            $.each(articlesWithPics, function( key, value ){
                 articleData += '<li>';
-                // articleData += '<img src="' + value.multimedia[4].url + '"/>';
+                articleData += '<img src="' + value.multimedia[4].url + '"/>';
                 articleData += '<p>' + value.abstract +'</p>'
                 articleData += '</li>';
             });
