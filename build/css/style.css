@@ -97,7 +97,7 @@ h1 {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 100%;
+  height: 90%;
   width: 100%; }
   @media (min-width: 600px) {
     .mainSearch {
@@ -136,15 +136,18 @@ h1 {
       width: auto; } }
 
 .resultsHeader {
-  height: 200px; }
+  height: 35%;
+  margin: 1rem 0; }
   @media (min-width: 600px) {
     .resultsHeader {
-      height: 125px; } }
+      height: 125px;
+      margin: 0.5em 0; } }
   .resultsHeader .logo img {
     height: 9rem; }
     @media (min-width: 600px) {
       .resultsHeader .logo img {
-        height: 4rem; } }
+        height: 4rem;
+        padding-top: 0; } }
 
 section {
   width: 100%; }
@@ -192,8 +195,11 @@ select {
 
 /*---------Footer---------*/
 footer {
-  height: 100px;
+  color: #c2c2c2;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
+  height: 10%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -208,6 +214,3 @@ footer {
     font-weight: normal;
     font-style: normal;
     font-size: 14px; }
-
-footer {
-  color: #c2c2c2; }

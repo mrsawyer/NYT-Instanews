@@ -17,7 +17,12 @@ $(function(){
             $('#search').toggleClass('resultsHeader');
             $('#results').toggleClass('resultsSection');
             var articleData = '';
-            console.log(result);
+            var articles = result.results;
+            var articlesWithPics = articles.filter(function(options){
+                    return options.multimedia.length !== 0;
+                })
+            console.log(articlesWithPics);
+
             $.each(result.results, function( key, value ){
                 articleData += '<li>';
                 // articleData += '<img src="' + value.multimedia[4].url + '"/>';
