@@ -9,6 +9,8 @@ The main motivation behind the creation of this website was to become more famil
 # Included
 index.html
 style.css
+script.js
+reset.css
 *this* README.md
 .gitignore
 all font resources
