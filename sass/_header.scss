@@ -78,7 +78,6 @@ h1 {
         font-size: $baseFont - 2;
     }
     @include desktop {
-        text-align: left;
         font-size: $baseFont;
     }
 }

@@ -1,4 +1,4 @@
-Instanews is a webapp that allows the user to choose a category and see up an list of up to date articles from the New York Times
+Instanews is a site that allows the user to choose a category and see up an list of up to date articles from the New York Times
 
 # Motivation
 Instanews was created as a requirement for project 2 at RED Academy 
