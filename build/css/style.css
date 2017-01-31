@@ -152,14 +152,6 @@ h1 {
 section {
   width: 100%; }
 
-.resultsSection {
-  background-color: grey;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  overflow: hidden; }
-
 .choose {
   font-family: 'open-sans';
   font-weight: normal;
@@ -189,9 +181,19 @@ section {
 
 .select {
   padding: 0.6rem; }
-
-select {
-  font-size: 1.1rem; }
+  .select select {
+    background: #2C3E50;
+    border: 1px solid white;
+    border-radius: 0;
+    height: 2.5rem;
+    width: 12rem;
+    font-size: 0.8rem;
+    font-family: 'open-sans';
+    font-weight: normal;
+    font-style: normal;
+    color: white; }
+    .select select option {
+      background: #2C3E50; }
 
 /*---------Footer---------*/
 footer {
@@ -214,3 +216,67 @@ footer {
     font-weight: normal;
     font-style: normal;
     font-size: 14px; }
+
+.load {
+  width: 100%; }
+  .load img {
+    display: -ms-flexbox;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px 0; }
+
+.searchResults {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer; }
+  .searchResults li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 26rem;
+    width: 100%;
+    overflow: hidden; }
+    @media (min-width: 600px) {
+      .searchResults li {
+        width: 50%; } }
+    @media (min-width: 1000px) {
+      .searchResults li {
+        width: 25%; } }
+  .searchResults .articleWrap {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%; }
+    .searchResults .articleWrap .abstract {
+      font-family: 'open-sans';
+      font-weight: normal;
+      font-style: normal;
+      position: absolute;
+      line-height: 1.5rem;
+      height: 0;
+      left: 0;
+      bottom: 0;
+      padding: 10px;
+      max-width: 100%;
+      visibility: hidden;
+      background: black;
+      background: rgba(0, 0, 0, 0.7);
+      transition: height 1s; }
+    .searchResults .articleWrap:hover .abstract {
+      visibility: visible;
+      height: 150px; }

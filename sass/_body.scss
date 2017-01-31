@@ -78,14 +78,9 @@ h1 {
         }
     }
 }
+
 section {
     width: 100%;
-}
-.resultsSection {
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
 }
 
 .choose {
@@ -116,10 +111,19 @@ section {
 
 .select { 
     padding: $mainSearchPad;
-}
-
-select {
-    font-size: 1.1rem;
+    select {
+        background: $selectBackground;
+        border: 1px solid white;
+        border-radius: 0;
+        height: 2.5rem;
+        width: 12rem;
+        font-size: 0.8rem;
+        @include fontNormal;
+        color: white;
+        option {
+            background: $selectBackground;
+        }
+    }
 }
 
 /*---------Footer---------*/
