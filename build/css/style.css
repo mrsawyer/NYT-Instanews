@@ -74,17 +74,6 @@ table {
   font-weight: normal;
   font-style: italic; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  width: 100%; }
-
-body {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 16px; }
-
-/*---------Header---------*/
 h1 {
   display: none; }
 
@@ -149,9 +138,6 @@ h1 {
         height: 4rem;
         padding-top: 0; } }
 
-section {
-  width: 100%; }
-
 .choose {
   font-family: 'open-sans';
   font-weight: normal;
@@ -194,6 +180,16 @@ section {
     color: white; }
     .select select option {
       background: #2C3E50; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  max-width: 100%; }
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px; }
 
 /*---------Footer---------*/
 footer {
@@ -257,8 +253,6 @@ footer {
       width: 100%;
       height: 100%; }
   .searchResults .articleWrap {
-    display: -ms-flexbox;
-    display: flex;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
