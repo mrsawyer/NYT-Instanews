@@ -253,6 +253,9 @@ footer {
     @media (min-width: 1000px) {
       .searchResults li {
         width: 25%; } }
+    .searchResults li a {
+      width: 100%;
+      height: 100%; }
   .searchResults .articleWrap {
     display: -ms-flexbox;
     display: flex;
@@ -276,7 +279,8 @@ footer {
       visibility: hidden;
       background: black;
       background: rgba(0, 0, 0, 0.7);
-      transition: height 1s; }
+      transition: height 1s;
+      color: #ffffff; }
     .searchResults .articleWrap:hover .abstract {
       visibility: visible;
       height: 150px; }

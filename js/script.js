@@ -16,7 +16,7 @@ $(function(){
             method: 'GET',
         })
         .done(function(result) {
-
+            console.log(result);
             $('#search').addClass('resultsHeader');
             $('#results').addClass('resultsSection');
             var articleData = '';
@@ -31,8 +31,9 @@ $(function(){
 
             $.each(topArticles, function( key, value ){
                 articleData += '<li>';
+                articleData += '<a href="' + value.url + '" target="_blank">';
                 articleData += '<div class="articleWrap" style="background-image: url('+value.multimedia[4].url+')">';
-                articleData += '<p class="abstract">' + value.abstract +'</p></div>'
+                articleData += '<p class="abstract">' + value.abstract +'</p></div></a>'
                 articleData += '</li>';
             });
             $('.searchResults').append(articleData);
