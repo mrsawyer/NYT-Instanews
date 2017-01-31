@@ -10,13 +10,12 @@ $(function(){
         url += '?' + $.param({
             'api-key': "49c6bed2e4044da2b7c4687f958f8164"
         });
-        console.log(url);
+
         $.ajax({
             url: url,
             method: 'GET',
         })
         .done(function(result) {
-            console.log(result);
             $('#search').addClass('resultsHeader');
             $('#results').addClass('resultsSection');
             var articleData = '';
@@ -26,8 +25,6 @@ $(function(){
                 })
 
             var topArticles = articlesWithPics.slice(0,12);
-
-            console.log(topArticles);
 
             $.each(topArticles, function( key, value ){
                 articleData += '<li>';
