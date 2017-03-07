@@ -3,7 +3,7 @@ $(function(){
     $('#mySelect').change(function(e) {
         e.preventDefault();
         $('.searchResults').empty();
-        $('#results').prepend('<div class="load"><img src="../../images/ajax-loader.gif"/></div>');
+        $('#results').prepend('<div class="load"><img src="images/ajax-loader.gif"/></div>');
         var selectedSection = $(this).find('option:selected').val();
         var url = "https://api.nytimes.com/svc/topstories/v2/" + selectedSection + ".json";
         url += '?' + $.param({
