@@ -48,6 +48,7 @@ h1 {
 }
 
 .resultsHeader{
+    transition: height .5s ease;
     height: 35%;
     margin: 1rem 0;
     @include tablet {
@@ -65,7 +66,7 @@ h1 {
 
         }
     }
-}
+} 
 
 .choose {
     @include fontNormal;
