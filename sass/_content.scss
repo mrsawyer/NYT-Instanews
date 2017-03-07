@@ -8,12 +8,15 @@ body {
     font-size: $baseFont;
 }
 
+.selectric .button {
+    font-family: 'open-sans', arial;
+}
+
 /*---------Footer---------*/
 
 footer { 
     color: #c2c2c2;
     align-items: center;
-    width: 100%;
     height: 10%;
     display: flex;
     justify-content: center; 

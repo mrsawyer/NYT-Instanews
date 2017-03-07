@@ -1,5 +1,4 @@
 $(function(){
-    
 
     $('#mySelect').change(function(e) {
         e.preventDefault();
@@ -42,6 +41,6 @@ $(function(){
         })
 
         .always(function(){ $('.load').remove();});
-    });
+    }).selectric();
 
 });

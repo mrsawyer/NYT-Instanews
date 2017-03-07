@@ -152,7 +152,6 @@ h1 {
       font-size: 14px; } }
   @media (min-width: 1000px) {
     .choose {
-      text-align: left;
       font-size: 16px; } }
 
 .sections {
@@ -166,7 +165,11 @@ h1 {
       margin-left: 6vw; } }
 
 .select {
-  padding: 0.6rem; }
+  padding-top: 0.6rem;
+  width: 100%; }
+  @media (min-width: 600px) {
+    .select {
+      width: 35%; } }
   .select select {
     background: #2C3E50;
     border: 1px solid white;
@@ -184,19 +187,21 @@ h1 {
 html, body {
   height: 100%;
   margin: 0;
-  max-width: 100%; }
+  max-width: 100vw; }
 
 body {
   background-color: #000000;
   color: #ffffff;
   font-size: 16px; }
 
+.selectric .button {
+  font-family: 'open-sans', arial; }
+
 /*---------Footer---------*/
 footer {
   color: #c2c2c2;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%;
   height: 10%;
   display: -ms-flexbox;
   display: flex;

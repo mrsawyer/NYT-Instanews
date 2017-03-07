@@ -93,7 +93,11 @@ h1 {
 }
 
 .select { 
-    padding: $mainSearchPad;
+    padding-top: $mainSearchPad;
+    width: 100%;
+    @include tablet {
+        width: 35%;
+    }
     select {
         background: $selectBackground;
         border: 1px solid white;
