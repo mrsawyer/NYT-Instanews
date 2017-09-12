@@ -20,7 +20,7 @@ $(function(){
             var articleData = '';
             var articles = result.results;
             var articlesWithPics = articles.filter(function(options){
-                    return options.multimedia.length !== 0;
+                    return options.multimedia.length >= 5;
                 })
 
             var topArticles = articlesWithPics.slice(0,12);
